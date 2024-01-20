@@ -11,10 +11,7 @@
     </servers>
 <profiles>
   <profile>
-    <id>cicd-aws-proj-maven-central-store</id>
-    <activation>
-      <activeByDefault>true</activeByDefault>
-    </activation>
+    <id>default</id>
     <repositories>
       <repository>
         <id>cicd-aws-proj-maven-central-store</id>
