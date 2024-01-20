@@ -5,11 +5,11 @@ env:
     HOST: HOST
     Organization: Organization
     Project: Project
-    CODEARTIFACT_AUTH_TOKEN: CODEARTIFACT_AUTH_TOKEN
+    #CODEARTIFACT_AUTH_TOKEN: CODEARTIFACT_AUTH_TOKEN
 phases:
   install:
     runtime-versions:
-      java: corretto8
+      java: corretto11
     commands:
     - cp ./settings.xml /root/.m2/settings.xml
     - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain cicd-aws-proj --domain-owner 587939292877 --region ap-south-1 --query authorizationToken --output text`
