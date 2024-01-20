@@ -23,7 +23,16 @@
 <activeProfiles>
         <activeProfile>default</activeProfile>
     </activeProfiles>
-
+<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>2.6</version>
+        </plugin>           
+      </plugins>
+    </pluginManagement>   
+</build>
 <mirrors>
   <mirror>
     <id>cicd-aws-proj-maven-central-store</id>
