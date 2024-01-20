@@ -11,11 +11,14 @@
     </servers>
 <profiles>
   <profile>
-    <id>default</id>
+    <id>cicd-aws-proj-maven-central-store</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
     <repositories>
       <repository>
-        <id>codeartifact</id>
-    <url>https://domain-accountid.d.codeartifact.region.amazonaws.com/maven/maven-central-store/</url>
+        <id>cicd-aws-proj-maven-central-store</id>
+        <url>https://cicd-aws-proj-587939292877.d.codeartifact.ap-south-1.amazonaws.com/maven/maven-central-store/</url>
       </repository>
     </repositories>
   </profile>
@@ -25,9 +28,9 @@
     </activeProfiles>
 <mirrors>
   <mirror>
-    <id>codeartifact</id>
-    <name>domainname--maven-central-store</name>
-    <url>https://domain-accountdid.d.codeartifact.region.amazonaws.com/maven/maven-central-store/</url>
+    <id>cicd-aws-proj-maven-central-store</id>
+    <name>cicd-aws-proj-maven-central-store</name>
+    <url>https://cicd-aws-proj-587939292877.d.codeartifact.ap-south-1.amazonaws.com/maven/maven-central-store/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
