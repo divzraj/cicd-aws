@@ -218,17 +218,15 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
         </plugin>
-        </plugins>
-    </build>
-    <build>
-  <plugins>
     <plugin>
       <groupId>org.sonarsource.scanner.maven</groupId>
       <artifactId>sonar-maven-plugin</artifactId>
       <version>3.9.0.2180</version>
     </plugin>
-  </plugins>
-</build>
+        </plugins>
+        
+    </build>
+    
   <repositories>
       <repository>
         <id>cicd-aws-proj-maven-central-store</id>
