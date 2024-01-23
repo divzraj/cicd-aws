@@ -22,6 +22,10 @@ phases:
       - wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip
       - unzip ./sonar-scanner-cli-5.0.1.3006-linux.zip
       - export PATH=$PATH:/sonar-scanner-5.0.1.3006-linux/bin/
+      - sudo apt update
+      - sudo apt install openjdk-17-jdk
+      - export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
   build:
     commands:
       - mvn test
