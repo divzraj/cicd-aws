@@ -213,9 +213,9 @@
     </build>
   <repositories>
       <repository>
-        <id>cicd-aws-proj-maven-central-store</id>
-    <name>cicd-aws-proj-maven-central-store</name>
-    <url>https://cicd-aws-proj-587939292877.d.codeartifact.ap-south-1.amazonaws.com/maven/maven-central-store/</url>
+         <id>codeartifactrepo-maven-central-store</id>
+         <name>codeartifactrepo-maven-central-store</name>
+         <url>https://codeartifactrepo-587939292877.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
       </repository>
     </repositories>
 </project>
