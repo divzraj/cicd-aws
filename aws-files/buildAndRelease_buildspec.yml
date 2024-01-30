@@ -26,6 +26,6 @@ phases:
       - mvn clean install -DskipTests
 artifacts:
   files:
-     - '**/*'
-  base-directory: 'target'
+     - target/**/*.war
+  discard-paths: yes
   name: ROOT.war
