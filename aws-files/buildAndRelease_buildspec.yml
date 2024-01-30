@@ -26,6 +26,5 @@ phases:
       - mvn clean install -DskipTests
 artifacts:
   files:
-     - target/**/*.war
-  discard-paths: yes
-  name: ROOT.war
+     - '**/*'
+  base-directory: 'target/vprofile-v2'
