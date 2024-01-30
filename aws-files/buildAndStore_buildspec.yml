@@ -5,7 +5,7 @@ env:
     dbhost: RDS-Endpoint
     dbuser: RDSUSER
     dbpass: RDSPASS
-    #mchost: ecache-url
+    mchost: ecache-url
     #rmqhost: rabbitM-url
     #rmquser: Rmq-user
     #rmqpass: Rmq-pwd
@@ -20,7 +20,7 @@ phases:
       - sed -i "s/jdbc.password=admin123/jdbc.password=$dbpass/" src/main/resources/application.properties
       - sed -i "s/jdbc.username=admin/jdbc.username=$dbuser/" src/main/resources/application.properties
       - sed -i "s/db01:3306/$dbhost:3306/" src/main/resources/application.properties
-      #- sed -i "s/memcached.active.host=mc01/memcached.active.host=$mchost/" src/main/resources/application.properties
+      - sed -i "s/memcached.active.host=mc01/memcached.active.host=$mchost/" src/main/resources/application.properties
       #- sed -i \"s/***mq.address=rmq01/***mq.address=$rmqhost/\" src/main/resources/application.properties
       #- sed -i "s/rabbitmq.port=5672/rabbitmq.port=5671/" src/main/resources/application.properties
       #- sed -i "s/rabbitmq.username=test/rabbitmq.username=$rmquser/" src/main/resources/application.properties
